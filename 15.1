@@ -1,0 +1,23 @@
+#include <iostream> //добавление библиотеки ввода/ввывода
+#include <math.h> //добавление библиотеки математических функций
+
+using namespace std;
+
+void poweraA3(float a, float* b)// функция 3 степени
+{
+    *b = a * a * a;
+}
+
+int main(void)
+{
+    int i;//объявление переменных
+    for (i = 1; i <= 5; ++i) {
+        float a;
+        cout << "A:";
+        cin >> a;//ввод числа
+        float b;
+        poweraA3(a, &b);
+        cout << "B: " << b << endl << endl;//вывод 3 степени
+    }
+    return 0;
+}

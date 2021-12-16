@@ -7,13 +7,7 @@ int main()
 {
     setlocale(LC_ALL, "Russian"); // русификация 
     // объявление переменных
-    int day, n;
-
-    cout << "Введите номер дня года: ";
-    cin >> day;
-    cout << "Введите номер дня недели для 1 января: ";
-    cin >> n;
-    day = day + n - 1;
+    int day;
     while (day > 7)
         day -= 7;
     cout << "Номер дня недели: " << day << endl;//вывод результата

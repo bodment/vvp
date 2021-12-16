@@ -1,0 +1,23 @@
+#include <iostream> //добавление библиотеки ввода/ввывода
+#include <math.h> //добавление библиотеки математических функций
+
+using namespace std;
+//Точка входа в программу - главная функция
+int main()
+{
+    setlocale(LC_ALL, "Russian"); // русификация 
+    // объявление переменных
+    int a, b, c, ac, bc, result;
+    //ввод переменных с клавиатуры
+    cout << "Введите A: ";
+    cin >> a;
+    cout << "Введите B: ";
+    cin >> b;
+    cout << "Введите C: ";
+    cin >> c; 
+    // вычисления
+    ac = abs(a - c);
+    bc = abs(b - c);
+    result = ac + bc;
+    cout << "Длина AC: " << ac << endl << "Длина BC: " << bc << endl << "Сумма AC и BC: " << result; // вывод результата на экран
+}

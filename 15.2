@@ -1,0 +1,19 @@
+#include <iostream> //добавление библиотеки ввода/ввывода
+#include <math.h> //добавление библиотеки математических функций
+
+using namespace std;
+
+int sign(float x) {
+    if (x < 0) { return -1; }    if (x == 0) { return 0; }    if (x > 0) { return 1; }
+}
+
+int main(void)
+{
+    float a, b;//объявление переменных
+    cout << "A:";
+    cin >> a;
+    cout << "B:";
+    cin >> b;
+    cout << "Sign(A)+Sign(B): " << sign(a) + sign(b);
+    return 0;
+}

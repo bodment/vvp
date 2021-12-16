@@ -1,0 +1,26 @@
+#include <iostream> //добавление библиотеки ввода/ввывода
+#include <math.h> //добавление библиотеки математических функций
+
+using namespace std;
+//Точка входа в программу - главная функция
+int main()
+{
+    setlocale(LC_ALL, "Russian"); // русификация 
+    // объявление переменных
+    int x1, x2, y1, y2, a, b, result_p, result_s;
+    //ввод переменных с клавиатуры
+    cout << "Введите x1: ";
+    cin >> x1;
+    cout << "Введите x2: ";
+    cin >> x2;
+    cout << "Введите y1: ";
+    cin >> y1;
+    cout << "Введите y2: ";
+    cin >> y2;
+    // вычисления
+    a = abs(x1 - x2);
+    b = abs(y1 - y2);
+    result_p = 2 * (a + b);
+    result_s = a * b;
+    cout << "Периметр: " << result_p << endl << "Площадь: " << result_s; // вывод результата на экран
+}
